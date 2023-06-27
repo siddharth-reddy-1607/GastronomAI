@@ -15,6 +15,7 @@ def preprocess(pil_image,scale=False):
         image=image/255.
     return image
 
+@st.cache_resource
 def load_model():
     # Get the current directory of the app file
     app_directory = os.path.dirname(os.path.abspath(__file__))
